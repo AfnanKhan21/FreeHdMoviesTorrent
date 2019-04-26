@@ -140,10 +140,25 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MovieDetailApiController.cs" />
+    <Compile Include="Controllers\MovieListApiController.cs" />
+    <Compile Include="Controllers\MovieSuggestionsApiController.cs" />
+    <Compile Include="Controllers\PopularMoviesListController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Cast.cs" />
+    <Compile Include="Models\Movie.cs" />
+    <Compile Include="Models\MovieDetail.cs" />
+    <Compile Include="Models\MovieList.cs" />
+    <Compile Include="Models\MovieSuggestions.cs" />
+    <Compile Include="Models\MovieWithTorrents.cs" />
+    <Compile Include="Models\MovieWithTorrentsAndCast.cs" />
+    <Compile Include="Models\Torrent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\MovieDetail_Services.cs" />
+    <Compile Include="Services\MovieList_Services.cs" />
+    <Compile Include="Services\MovieSuggestions_Services.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -400,7 +415,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
